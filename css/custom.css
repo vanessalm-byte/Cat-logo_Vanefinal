@@ -1,0 +1,82 @@
+/* =========================================================
+   PALETA DE COLORES Y FUENTES (Modifica aquí si quieres cambiar el tema)
+   ========================================================= */
+:root {
+    --bg-cream: #F8F5F0;
+    --text-dark: #2C221E;
+    --accent-coffee: #5C3D2E;
+    --accent-gold: #C89F77;
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background-color: var(--bg-cream);
+    color: var(--text-dark);
+    font-family: var(--font-sans);
+}
+
+.font-serif {
+    font-family: var(--font-serif);
+}
+
+/* Botones personalizados */
+.btn-coffee {
+    background-color: var(--accent-coffee);
+    color: #fff;
+    border: 1px solid var(--accent-coffee);
+}
+
+.btn-coffee:hover, .btn-coffee.active {
+    background-color: #3E271D;
+    color: #fff;
+    border-color: #3E271D;
+}
+
+.btn-outline-coffee {
+    color: var(--accent-coffee);
+    border: 1px solid var(--accent-coffee);
+    background-color: #fff;
+}
+
+.btn-outline-coffee:hover, .btn-outline-coffee.active {
+    background-color: var(--accent-coffee);
+    color: #fff;
+}
+
+/* Portada Hero estilo revista */
+.hero-editorial {
+    min-height: 400px;
+    background: linear-gradient(90deg, rgba(35, 24, 19, 0.88) 0%, rgba(35, 24, 19, 0.45) 60%, rgba(35, 24, 19, 0.15) 100%),
+                url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+}
+
+/* Tarjetas del catálogo */
+.coffee-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border-color: #E6DFD5 !important;
+}
+
+.coffee-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(44, 34, 30, 0.08) !important;
+}
+
+.coffee-img-box {
+    background-color: #EFE9E0;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.coffee-img-box img {
+    max-height: 185px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.coffee-card:hover .coffee-img-box img {
+    transform: scale(1.06);
+}
